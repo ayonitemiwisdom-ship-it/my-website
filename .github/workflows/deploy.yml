@@ -27,8 +27,8 @@ jobs:
       - name: Deploy to EC2
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.EC2_HOST }}
+          host: ${{ secrets.3.9.165.56 }}
           username: ubuntu
-          key: ${{ secrets.EC2_SSH_KEY }}
+          key: ${{ secrets.wisdomkp.pem }}
           source: "dist"
           target: "/var/www/mywebsite"
